@@ -5,10 +5,11 @@ import App from './App';
 import reportWebVitals from './reportWebVitals';
 import SimpleComponent from "./examples/simple.component";
 import  PropertyComponent from "./examples/property.component";
+import ButtonComponent from "./examples//button.component";
 
 ReactDOM.render(
   <React.StrictMode>
-    <PropertyComponent />
+    <ButtonComponent />
   </React.StrictMode>,
   document.getElementById('root')
 );

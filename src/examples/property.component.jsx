@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 export default class PropertyComponent extends Component {
-  prop = {
+  state = {
     title: "Hello World",
     image: "./img/react.jpg",
   };
@@ -11,8 +11,8 @@ export default class PropertyComponent extends Component {
   render() {
     return (
       <div>
-        <h1>{this.prop.title}</h1>
-        <img src={this.prop.image} />
+        <h1>{this.state.title}</h1>
+        <img src={this.state.image} />
         <span style={this.styles}>Styles</span>
       </div>
     );
