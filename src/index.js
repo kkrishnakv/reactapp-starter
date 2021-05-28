@@ -3,14 +3,14 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
-import SimpleComponent from "./examples/simple.component";
-import  PropertyComponent from "./examples/property.component";
-import ButtonComponent from "./examples//button.component";
+import  Customer from "./components/customer";
+import 'bootstrap/dist/css/bootstrap.min.css';
+import { BrowserRouter } from "react-router-dom";
 
 ReactDOM.render(
-  <React.StrictMode>
-    <ButtonComponent />
-  </React.StrictMode>,
+  <BrowserRouter>
+    <Customer name="krishna" img="img/react.jpg"/>
+  </BrowserRouter>,
   document.getElementById('root')
 );
 
